@@ -17,7 +17,7 @@ RUN apk --update add --virtual verify gpgme \
  && apk del verify \
  && cat vault_${VERSION}_SHA256SUMS | grep linux_amd64 | sha256sum -c \
  && unzip vault_${VERSION}_linux_amd64.zip \
- && mv vault /usr/bin/ \
+ && mv vault /usr/local/bin/ \
  && rm -rf /tmp/* \
  && rm -rf /var/cache/apk/*
 
