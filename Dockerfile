@@ -1,6 +1,6 @@
 # Docker file to run Hashicorp Vault (vaultproject.io)
 
-FROM gliderlabs/alpine:3.3
+FROM alpine:latest
 MAINTAINER Derek Chamorro <therandomsecurityguy@gmail.com>
 
 ENV VERSION 0.5.0
