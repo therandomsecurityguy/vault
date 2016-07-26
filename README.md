@@ -12,7 +12,7 @@ Or with a given config:
 
 ```bash
 docker run -it -p 8200:8200 --hostname vault --name vault \
-    -v $PWD/config/config.hcl:/config/config.hcl therandomsecurityguy/vault server --config=/config/config.hcl
+    -v $PWD/samples/vault.hcl:/config/vault.hcl therandomsecurityguy/vault server --config=/config/vault.hcl
 ```
 
 If you require SSL CA certificates, mount them from the host system to /etc/ssl/certs. For instance, when using CoreOS, add -v /usr/share/ca-certificates:/etc/ssl/certs:ro to your command.
