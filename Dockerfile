@@ -3,7 +3,7 @@
 FROM alpine:3.12
 MAINTAINER Derek Chamorro <therandomsecurityguy@gmail.com>
 
-ENV VERSION 1.5.1
+ENV VERSION 1.6.1
 
 ADD https://releases.hashicorp.com/vault/${VERSION}/vault_${VERSION}_linux_amd64.zip /tmp/
 ADD https://releases.hashicorp.com/vault/${VERSION}/vault_${VERSION}_SHA256SUMS      /tmp/
