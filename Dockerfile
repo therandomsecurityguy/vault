@@ -1,6 +1,6 @@
 # Docker file to run Hashicorp Vault (vaultproject.io)
 
-FROM alpine:3.15.5
+FROM alpine:3.12
 MAINTAINER Derek Chamorro <therandomsecurityguy@gmail.com>
 
 ENV VERSION 1.7.1
