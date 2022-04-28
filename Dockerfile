@@ -12,7 +12,7 @@ ADD https://releases.hashicorp.com/vault/${VERSION}/vault_${VERSION}_SHA256SUMS.
 WORKDIR /tmp/
 
 RUN apk --update add --virtual verify gpgme \
- && gpg --keyserver ha.pool.sks-keyservers.net --recv-key 0x72D7468F \
+ && gpg --keyserver keyserver.ubuntu.com --recv-key 0x72D7468F \
  && gpg --verify /tmp/vault_${VERSION}_SHA256SUMS.sig \
  && apk del verify \
  && cat vault_${VERSION}_SHA256SUMS | grep linux_amd64 | sha256sum -c \
